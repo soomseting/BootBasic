@@ -1,6 +1,9 @@
 package com.simple.basic.command;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
@@ -12,13 +15,10 @@ import java.time.LocalDateTime;
 //@ToString //toString메서드 오버라이딩
 @Data //getter + setter + toString 를 합침
 @Builder
-public class TestVO {
+public class SimpleVO {
 
     //단축키 alt + insert
-    private String id;
-    private String pw;
+    private int mno;
     private String name;
-    private int salary;
-    private String address;
     private LocalDateTime hiredate;
 }
