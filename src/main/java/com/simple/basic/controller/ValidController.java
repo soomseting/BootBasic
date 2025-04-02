@@ -77,7 +77,7 @@ public class ValidController {
     }
 
     @PostMapping("/quizJoinForm")
-    public String quizJoinForm(@Valid @ModelAttribute("vo") DemoVO vo, BindingResult result, Model model){
+    public String quizJoinForm(@Valid @ModelAttribute("vo") DemoVO vo, BindingResult result){
         if (result.hasErrors()){
             return "valid/quiz01";
         }
